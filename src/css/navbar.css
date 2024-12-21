@@ -1,0 +1,93 @@
+.nav-container {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    /* padding: 20px; */
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+
+  .sidebar2{
+    /* From https://css.glass */
+    background-color: white;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 80vw;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in-out;
+    z-index: 999;
+  }
+
+  .open {
+    background-color: white;
+    transform: translateX(0);
+    margin-block-start: 0;
+    margin-block-end: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 80vw;
+    transition: transform 0.5s ease-in-out;
+    z-index: 999;
+  }
+
+
+  .close-btn{
+    all:unset;
+    color: black;
+    margin: 50px 0 20px 30px;
+    font-size: 22px;
+  }
+
+  .link-list{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+
+  .nav-lists{
+    line-height: 60px;
+    letter-spacing: 5px;
+    margin: 0 30px;
+    list-style: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+  }
+
+  .nav-lists, li{
+    background-color: transparent;
+  }
+
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo{
+    display: flex;
+    padding: 5px 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo img{
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .logo-name{
+    padding: 20px 0 0 0;
+    font-size: 16px;
+  }

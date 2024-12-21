@@ -1,0 +1,23 @@
+.login-container{
+    width: 100%;
+    height: 100%;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+}
+
+.login-form{
+    position: relative;
+    top: 30%;
+    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: auto;
+}
+
+.login-form input{
+    all: unset;
+    background-color: white;
+    border-radius: 3px;
+    text-align: center;
+}

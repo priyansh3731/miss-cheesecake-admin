@@ -1,0 +1,211 @@
+.order-page-container{
+    background-color: #EEE;
+    padding: 50px;
+}
+
+.order-page-header{
+    margin: 20px 0;
+}
+
+.id-name-container{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.ordermethod, .tracking {
+    background-color: #ffd7a3; /* Adjust background color for each class */
+    font-size: 14px;
+    height: 50%;
+    padding: 2px 8px;
+    border-radius: 10px;
+    }
+.tracking {
+    background-color: #ffeb78; /* Specific background color for .tracking */
+}
+
+
+.date{
+    color: grey;
+    font-size: 14px;
+}
+
+.products-lists-container{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.products-lists-header{
+    border-bottom: solid 0.5px gray;
+    line-height: 30px;
+}
+
+
+.product-price-container {
+    display: flex;
+    margin: 10px;
+    padding: 20px 0;
+    justify-content: space-between;
+    flex-direction: row; /* Ensures items stack vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text inside the div */
+}
+
+.product-price-container img {
+    width: 80px; /* Adjust image width */
+}
+
+.product-price-container h4 {
+    margin-top: 10px; /* Example: Adds space above title */
+    margin-bottom: 0; /* Example: Removes default bottom margin */
+    padding: 0 20px;
+}
+
+.item-button{
+    border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+}
+
+.payment-address-container{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.price-container {
+    margin: 20px 0;
+    width: calc(50vw - 60px); /* Added spaces around the '-' operator */
+    border-radius: 10px;
+    background-color: white;
+}
+
+
+.total-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.address-container{
+    margin: 20px 0;
+    width: calc(50vw - 60px);
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+
+.edit-icon-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.edit-icon-container img{
+    width: 20px;
+}
+
+.centered-popup {
+    /* Center the popup horizontally and vertically */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000; /* Ensure it's above other content */
+    background: white; /* Background color */
+    padding: 20px; /* Padding inside the popup */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    width: 500px; /* Adjust width as needed */
+    max-width: 90%; /* Ensure it doesn't exceed the screen size */
+}
+
+.popup-div {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+}
+
+.popup-header{
+    background-color: #EEE;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 10px;
+}
+
+
+.address-form{
+    display: flex;
+    flex-direction: column; /* Ensures inputs stack vertically */
+    gap: 10px;
+    margin: 30px 0;
+}
+
+
+.content {
+    background-color: white;
+    padding: 50px 20px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.name-section{
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+}
+
+
+
+.address-input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid grey;
+    color: gray;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: white;
+}
+
+.select-section{
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 16px;
+    color: grey;
+    background-color: white;
+}
+
+.select-container{
+    display: flex;
+    gap: 5px;
+    width: 100%;
+}
+
+.button-container{
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+
+.tracking-input{
+    width: 500px;
+    padding: 10px;
+    border: 1px solid grey;
+    color: gray;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: white;   
+}
+
+.shadow-given{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+}
