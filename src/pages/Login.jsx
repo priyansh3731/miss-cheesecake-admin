@@ -2,27 +2,29 @@ import { useState } from "react";
 import { auth } from "../config"; // Ensure the import path matches your file structure
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
-import "../css/login.css"
+import "../css/login.css";
 
 const Login = () => {
-    const [user, setUser] = useState(null);
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
-    const navigate = useNavigate()
+    const navigate = useNavigate();
 
     const clickHandler = async (e) => {
-        e.preventDefault(); // Prevent form submission from reloading the page
-        
-        const userCredential = await signInWithEmailAndPassword(auth,email, password);
-        console.log(userCredential.user)
-        navigate('/')
+        e.preventDefault();
+        try {
+            const userCredential = await signInWithEmailAndPassword(auth, email, password);
+            console.log(userCredential.user);
+            navigate("/");
+        } catch (error) {
+            console.error("Login failed: ", error.message);
+            alert("Invalid email or password. Please try again.");
+        }
     };
 
     return (
-        <>
+        <div className="main-conatainer">
             <div className="login-container">
             <form className="login-form" onSubmit={clickHandler}>
-                {/* <label>Email</label> */}
                 <h1>Log In</h1>
                 <input
                     placeholder="Email"
@@ -31,8 +33,6 @@ const Login = () => {
                     onChange={(e) => setEmail(e.target.value)}
                     required
                 />
-
-                {/* <label>Password</label> */}
                 <input
                     placeholder="Password"
                     type="password"
@@ -40,12 +40,10 @@ const Login = () => {
                     onChange={(e) => setPassword(e.target.value)}
                     required
                 />
-
                 <button type="submit">Submit</button>
             </form>
-
-            </div>
-        </>
+        </div>
+        </div>
     );
 };
 
