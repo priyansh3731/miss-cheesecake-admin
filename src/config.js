@@ -5,13 +5,13 @@ import { getAuth, GoogleAuthProvider } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAHuClSnvyJbXoskYiDjzvOK-fME53Dirc",
-  authDomain: "khushbujewellers-b006f.firebaseapp.com",
-  projectId: "khushbujewellers-b006f",
-  storageBucket: "khushbujewellers-b006f.appspot.com",
-  messagingSenderId: "256307636577",
-  appId: "1:256307636577:web:4078b3ef2a0ab4dee1fd20",
-  databaseURL: "https://khushbujewellers-b006f-default-rtdb.asia-southeast1.firebasedatabase.app/"
+  apiKey: "AIzaSyAKFQWwXQ0frRXDPIuxEBrC8acViX9B_-4",
+  authDomain: "p2p-call-sample-1ddf7.firebaseapp.com",
+  databaseURL: "https://p2p-call-sample-1ddf7-default-rtdb.firebaseio.com",
+  projectId: "p2p-call-sample-1ddf7",
+  storageBucket: "p2p-call-sample-1ddf7.appspot.com",
+  messagingSenderId: "426213562679",
+  appId: "1:426213562679:web:ad1ea0ebf71471116b22b2"
 };
 
 // Initialize Firebase
